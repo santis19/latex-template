@@ -10,7 +10,7 @@ clean:
 	rm -rf $(OUTPUT)
 
 show: all
-    @ ( $(PDFVIEWER) $(OUTPUT)/$(PROJECT).pdf > /dev/null 2>&1 & )
+	@ ( $(PDFVIEWER) $(OUTPUT)/$(PROJECT).pdf > /dev/null 2>&1 & )
 
 $(PROJECT).tex: $(PROJECT).aux
 	pdflatex $(LATEX_FLAGS) $(PROJECT).tex

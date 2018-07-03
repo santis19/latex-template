@@ -1,4 +1,4 @@
-PROJECT = archivo
+PROJECT = article
 LATEX_FLAGS  = -halt-on-error -output-directory $(OUTPUT)/
 OUTPUT = output
 PDFVIEWER = evince

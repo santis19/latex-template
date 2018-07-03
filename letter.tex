@@ -3,8 +3,10 @@
 \usepackage[spanish]{babel}
 \usepackage[hmargin=3cm, vmargin=3cm]{geometry}
 \usepackage{setspace}
-\onehalfspacing
+\usepackage{parskip}
 
+\onehalfspacing
+\setlength{\parindent}{1em}
 \pagestyle{empty}
 
 
@@ -14,10 +16,11 @@
 \today
 \end{flushright}
 
-\vspace{-1em}
-
-\noindent Departmento de \LaTeX \\ Universidad de GNU \\ S/D
-
+\noindent
+Departmento de \LaTeX \\
+Universidad de GNU \\
+Sr Director \\
+S/D
 \vspace{1em}
 
 \noindent De nuestra mayor consideración:
@@ -25,8 +28,17 @@
 Cuerpo
 
 \vspace{4em}
-\begin{center}
-Firma
-\end{center}
+
+\begin{minipage}{0.5\linewidth}
+    \begin{center}
+    Firma 1
+    \end{center}
+\end{minipage}
+~
+\begin{minipage}{0.5\linewidth}
+    \begin{center}
+    Firma 2
+    \end{center}
+\end{minipage}
 
 \end{document}

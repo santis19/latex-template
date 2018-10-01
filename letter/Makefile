@@ -1,7 +1,7 @@
 PROJECT = letter
 LATEX_FLAGS  = -halt-on-error -output-directory $(OUTPUT)/
 OUTPUT = output
-PDFVIEWER = evince
+PDFVIEWER = xdg-open
 
 
 all: $(PROJECT).tex
